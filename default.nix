@@ -19,7 +19,8 @@
   # flakeModules = { }; # flake-parts modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
+  aml-flash = pkgs.callPackage ./pkgs/aml-flash { };
+  satisfactorymodmanager = pkgs.callPackage ./pkgs/satisfactorymodmanager { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
